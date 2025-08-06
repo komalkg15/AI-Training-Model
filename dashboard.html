@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard">
+    <div class="header">
+        <h1>AI Training Platform</h1>
+        <div class="header-buttons">
+            <button onclick="window.location.href='certificate.html'" class="certificate-btn">View Certificate</button>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="welcome-section">
+            <h2>Welcome to AI Training</h2>
+            <p>Complete all modules to earn your certificate and become an AI expert!</p>
+            <button onclick="loadDashboard()" style="margin-top: 10px; padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;">Refresh Data</button>
+        </div>
+        
+        <div class="progress-section">
+            <h3>Your Progress</h3>
+            <div class="overall-progress">
+                <h4>Overall Completion</h4>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0% Complete</div>
+            </div>
+            <div class="progress-indicator">
+                <p>Track your progress through each module</p>
+            </div>
+        </div>
+        
+        <div class="modules-section">
+            <h3>Training Modules</h3>
+            <p>Click on any module to start learning</p>
+            <div class="modules-grid">
+                <!-- Modules will be loaded dynamically -->
+            </div>
+        </div>
+        
+        <div class="videos-section">
+            <h3>AI Training Videos</h3>
+            <p>All videos added by admin to help you learn AI concepts</p>
+            <button onclick="refreshVideos()" style="margin-bottom: 15px; padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;">Refresh Videos</button>
+            <div class="video-grid">
+                <!-- Videos will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

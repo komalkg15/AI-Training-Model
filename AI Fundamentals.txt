@@ -1,0 +1,17 @@
+AI Fundamentals
+
+Introduction to Artificial Intelligence concepts and principles
+
+<h3>AI Fundamentals</h3><p>This module covers the basics of AI including machine learning, neural networks, and deep learning concepts.</p><h4>Key Topics:</h4><ul><li>What is Artificial Intelligence?</li><li>Types of AI: Narrow vs General</li><li>Machine Learning Basics</li><li>Neural Networks Introduction</li><li>Deep Learning Fundamentals</li></ul><h4>Learning Objectives:</h4><ul><li>Understand the core concepts of AI</li><li>Learn about different types of AI systems</li><li>Explore machine learning algorithms</li><li>Understand neural network architecture</li></ul><div style="margin-top: 30px; text-align: center;"><h4>AI Training Presentation</h4><iframe src="https://gamma.app/embed/zvxgkpopl5zhcc1" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="AI Training & Course Details: Your Path to Mastering Artificial Intelligence"></iframe></div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JMUxmLyrhSk" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+Machine Learning Explained
+
+Understanding machine learning concepts
+
+https://youtu.be/JMUxmLyrhSk?si=mLxjo0eJ2DBrRNzY

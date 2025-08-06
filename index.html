@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card" id="mainLoginCard">
+            <div class="logo" id="loginLogo">
+                <h1 id="loginHeading">AI Training Platform</h1>
+                <p id="loginSubheading">Master AI with Professional Training</p>
+            </div>
+            <div class="login-type-selector">
+                <button class="type-btn active" id="userTabBtn" onclick="showUserLogin()">User Login</button>
+                <button class="type-btn" id="adminTabBtn" onclick="showAdminLogin()">Admin Login</button>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <form id="adminLoginForm" class="login-form" style="display:none;">
+                <div class="form-group">
+                    <label for="adminEmail">Admin Email</label>
+                    <input type="email" id="adminEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Admin Password</label>
+                    <input type="password" id="adminPassword" name="password" required>
+                </div>
+                <button type="submit" class="login-btn admin-login-btn">Admin Login</button>
+            </form>
+            <div class="admin-note" id="adminNote" style="display:none;">
+                <p><strong>Note:</strong> Only administrators can access the admin panel.</p>
+            </div>
+            <div class="register-link" id="registerLink" style="display:none;">
+                <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            </div>
+        </div>
+        <div class="register-card" id="registerCard" style="display: none;">
+            <div class="logo">
+                <h1>Create Account</h1>
+                <p>Join our AI training community</p>
+            </div>
+            <form id="registerForm" class="login-form">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Register</button>
+            </form>
+            <div class="register-link">
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

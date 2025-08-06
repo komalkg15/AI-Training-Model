@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - AI Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-dashboard">
+    <div class="header">
+        <h1>AI Training - Admin Panel</h1>
+        <div class="header-buttons">
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+    
+    <div class="admin-container">
+        <div class="sidebar">
+            <div class="admin-nav">
+                <button class="nav-btn active" onclick="showSection('modules')">📚 Modules</button>
+                <button class="nav-btn" onclick="showSection('videos')">🎥 Videos</button>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <!-- Modules Section -->
+            <div id="modules-section" class="content-section active">
+                <div class="section-header">
+                    <h2>Manage Training Modules</h2>
+                    <button onclick="showAddModuleForm()" class="add-btn">+ Add New Module</button>
+                </div>
+                
+                <div class="modules-list">
+                    <!-- Modules will be loaded here -->
+                </div>
+                
+                <!-- Add/Edit Module Form -->
+                <div id="module-form" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 id="form-title">Add New Module</h3>
+                            <button onclick="closeModuleForm()" class="close-btn">&times;</button>
+                        </div>
+                        <form id="moduleForm">
+                            <input type="hidden" id="module-id" name="id">
+                            <div class="form-group">
+                                <label for="module-title">Module Title</label>
+                                <input type="text" id="module-title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="module-description">Description</label>
+                                <textarea id="module-description" name="description" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="module-ppt">PPT Content (HTML)</label>
+                                <textarea id="module-ppt" name="ppt_content" rows="8" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="module-video">Video Content (HTML)</label>
+                                <textarea id="module-video" name="video_content" rows="8" required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="save-btn">Save Module</button>
+                                <button type="button" onclick="closeModuleForm()" class="cancel-btn">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Videos Section -->
+            <div id="videos-section" class="content-section">
+                <div class="section-header">
+                    <h2>Manage Videos</h2>
+                    <button onclick="showAddVideoForm()" class="add-btn">+ Add New Video</button>
+                </div>
+                
+                <div class="videos-list">
+                    <!-- Videos will be loaded here -->
+                </div>
+                
+                <!-- Add/Edit Video Form -->
+                <div id="video-form" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 id="video-form-title">Add New Video</h3>
+                            <button onclick="closeVideoForm()" class="close-btn">&times;</button>
+                        </div>
+                        <form id="videoForm">
+                            <input type="hidden" id="video-id" name="id">
+                            <div class="form-group">
+                                <label for="video-title">Video Title</label>
+                                <input type="text" id="video-title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="video-description">Description</label>
+                                <textarea id="video-description" name="description" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="video-url">Video URL</label>
+                                <input type="url" id="video-url" name="url" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="save-btn">Save Video</button>
+                                <button type="button" onclick="closeVideoForm()" class="cancel-btn">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+        </div>
+    </div>
+    
+    <script src="admin.js"></script>
+</body>
+</html> 
